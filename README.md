@@ -1,102 +1,121 @@
-# capstone-project
+# 📊 Customer Segmentation Using RFM & K-Means Clustering
 
-# Customer Segmentation Using RFM & K-Means Clustering
+Proyek ini bertujuan melakukan **segmentasi pelanggan** menggunakan
+metode **RFM (Recency, Frequency, Monetary)** dan algoritma **K-Means
+Clustering**.\
+Hasil segmentasi digunakan untuk meningkatkan strategi personalisasi,
+retensi pelanggan, dan efektivitas kampanye marketing.
 
-Proyek ini bertujuan melakukan segmentasi pelanggan menggunakan metode **RFM (Recency, Frequency, Monetary)** dan algoritma **K-Means Clustering**.  
-Hasil segmentasi ini dapat digunakan perusahaan untuk meningkatkan strategi personalisasi, retensi pelanggan, dan efektivitas marketing.
+------------------------------------------------------------------------
 
----
+## 🚀 1. Project Overview
 
-## 1. Project Overview
-Segmentasi pelanggan dilakukan menggunakan pendekatan berikut:
+Segmentasi dilakukan menggunakan dua pendekatan utama:
 
-### **RFM Analysis**
-- **Recency**: Seberapa baru pelanggan melakukan transaksi  
-- **Frequency**: Seberapa sering pelanggan bertransaksi  
-- **Monetary**: Total uang yang dibelanjakan pelanggan  
+### **🔹 RFM Analysis**
 
-### **Clustering**
-Setelah RFM dihitung, nilai diolah menggunakan **StandardScaler** dan kemudian di-cluster dengan **K-Means** untuk menghasilkan beberapa segmen pelanggan, seperti:
-- Pelanggan terbaik  
-- Pelanggan loyal  
-- Pelanggan potensial  
-- Pelanggan berisiko  
-- Pelanggan membutuhkan perhatian  
+-   **Recency** --- Seberapa baru pelanggan terakhir bertransaksi\
+-   **Frequency** --- Seberapa sering pelanggan bertransaksi\
+-   **Monetary** --- Total jumlah uang yang dibelanjakan pelanggan
 
----
+### **🔹 K-Means Clustering**
 
-## 2. Project Structure
-capstone-project/
-│
-├── capstone_fixed.py # Script preprocessing, RFM, clustering
-├── notebook/ # Notebook analisis lengkap
-├── data/ # Dataset transaksi pelanggan
-├── visualizations/ # Grafik segment summary, boxplot, elbow, pairplot
-├── model/ # (Opsional) Model clustering tersimpan
-├── README.md # Dokumentasi proyek
+Setelah nilai RFM dihitung dan distandardisasi, pelanggan dikelompokkan
+menjadi beberapa segmen, seperti:
 
-## 3. Methods Used
+-   Best Customers\
+-   Loyal Customers\
+-   Potential Customers\
+-   At-Risk Customers\
+-   Customers Needing Attention
 
-### ✔ Data Preprocessing
-- Cleaning data (missing values, duplikasi)
-- Filtering transaksi valid
-- Feature engineering untuk menghitung nilai RFM
+------------------------------------------------------------------------
 
-### ✔ Modeling
-- Scaling fitur menggunakan StandardScaler
-- Clustering menggunakan **K-Means**
-- Evaluasi dengan:
-  - **Elbow Method**  
-  - **Silhouette Score**
+## 📁 2. Project Structure
 
-### ✔ Visualization
-- Boxplot untuk distribusi RFM per cluster
-- Pairplot untuk persebaran cluster
-- Segment Summary Table
-- Elbow Chart untuk menentukan cluster optimal
+    capstone-project/
+    │
+    ├── capstone_fixed.py       # Script preprocessing, RFM computation, clustering
+    ├── notebook/               # Notebook analisis lengkap
+    ├── data/                   # Dataset transaksi pelanggan
+    ├── visualizations/         # Grafik: segment summary, boxplot, elbow, pairplot
+    ├── model/                  # (Opsional) Trained clustering model
+    ├── README.md               # Dokumentasi proyek
 
----
+------------------------------------------------------------------------
 
-## 4. Key Visualizations
+## 🛠 3. Methods Used
 
-- **Segment Summary Table** → Ringkasan karakteristik setiap cluster  
-- **RFM Boxplots** → Distribusi Recency, Frequency, Monetary  
-- **Pairplot Cluster** → Visualisasi persebaran cluster berdasarkan fitur  
-- **Elbow Method** → Menentukan jumlah cluster optimal  
+### ✔ **Data Preprocessing**
 
-Semua visualisasi tersedia di folder `visualizations/`.
+-   Cleaning data (missing values, duplikasi)
+-   Filtering transaksi valid
+-   Feature engineering untuk menghitung nilai RFM
 
----
+### ✔ **Modeling**
 
-##  5. How to Run the Project
+-   Standarisasi fitur menggunakan **StandardScaler**
+-   Clustering menggunakan **K-Means**
+-   Evaluasi menggunakan:
+    -   **Elbow Method**
+    -   **Silhouette Score**
 
-### **1. Clone repository**
-```bash
+### ✔ **Visualization**
+
+-   Boxplot distribusi RFM berdasarkan cluster\
+-   Pairplot persebaran cluster\
+-   Segment Summary Table\
+-   Elbow Chart penentuan jumlah cluster optimal
+
+Semua grafik disimpan di folder **visualizations/**.
+
+------------------------------------------------------------------------
+
+## 📊 4. Key Visualizations
+
+-   Segment Summary Table\
+-   RFM Boxplots\
+-   Cluster Pairplot\
+-   Elbow Method Chart
+
+------------------------------------------------------------------------
+
+## ▶ 5. How to Run the Project
+
+### 1. Clone repository
+
+``` bash
 git clone https://github.com/monicavdy03/capstone-project.git
+```
 
-### **2. Install Dependencies**
-```bash
+### 2. Install dependencies
+
+``` bash
 pip install pandas numpy matplotlib seaborn scikit-learn
+```
 
-### **3. Jalankan notebook atau script**
-```bash
+### 3. Jalankan script atau notebook
+
+``` bash
 python capstone_fixed.py
+```
 
----
+------------------------------------------------------------------------
 
-##  6. Team Members
-| Nama                    | Role             |
-| ----------------------- | ---------------- |
-| Putri Ayuningsih        | Machine Learning |
-| Azizah Nur Apriliani    | Machine Learning |
-| Monika Dian Vidya Putri | Machine Learning |
+## 👥 6. Team Members
 
----
+  Nama                      Role
+  ------------------------- ------------------
+  Putri Ayuningsih          Machine Learning
+  Azizah Nur Apriliani      Machine Learning
+  Monika Dian Vidya Putri   Machine Learning
 
-## 7. Dataset
+------------------------------------------------------------------------
+
+## 📚 7. Dataset
+
 Dataset yang digunakan:
-Customer Segmentation for Personalized Retail Marketing
-Berisi data transaksi pelanggan untuk analisis RFM.
 
----
-
+**Customer Segmentation for Personalized Retail Marketing**\
+Berisi data transaksi pelanggan yang digunakan untuk perhitungan RFM dan
+clustering.
