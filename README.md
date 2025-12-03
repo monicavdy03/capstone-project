@@ -107,7 +107,9 @@ python capstone_fixed.py
   Nama                      Role
   ------------------------- ------------------
   Putri Ayuningsih          Machine Learning
+  
   Azizah Nur Apriliani      Machine Learning
+  
   Monika Dian Vidya Putri   Machine Learning
 
 ------------------------------------------------------------------------
