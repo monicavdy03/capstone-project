@@ -81,3 +81,22 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 ### **3. Jalankan notebook atau script**
 ```bash
 python capstone_fixed.py
+
+---
+
+##  6. Team Members
+| Nama                    | Role             |
+| ----------------------- | ---------------- |
+| Putri Ayuningsih        | Machine Learning |
+| Azizah Nur Apriliani    | Machine Learning |
+| Monika Dian Vidya Putri | Machine Learning |
+
+---
+
+## 7. Dataset
+Dataset yang digunakan:
+Customer Segmentation for Personalized Retail Marketing
+Berisi data transaksi pelanggan untuk analisis RFM.
+
+---
+
